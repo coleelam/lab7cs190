@@ -33,6 +33,12 @@ def mult(a, b):
 def div(a, b):
     return a / b
 
+# Modulus function
+# a -- moduland
+# b -- modulizer
+def mod(a, b):
+	return a % b
+
 
 # -------------------------------------------------------- #
 
@@ -61,6 +67,8 @@ while (True):
     if (op != None):
         if (op == "+"):
             print "Sum: ", add(a, b)
+        elif (op == "%"):
+            print "Modulus: ", mod(a, b)
         elif (op == "-"):
             print "Difference: ", sub(a, b)
         elif (op == "*"):
